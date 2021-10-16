@@ -21,8 +21,12 @@ class GlobeApp extends StatelessWidget {
                 fit: BoxFit.cover,
               ),
             ),
-            child: const Center(
-                child: Text('Commit to be fit, dhaskjdhdkfkdshfk'))),
+            child: Center(
+                child: Container(
+                    decoration: const BoxDecoration(
+                      color: Colors.white70,
+                    ),
+                    child: const Text('Commit to be fit, dhaskjdhdkfkdshfk')))),
       ),
     );
   }
