@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 void main() {
-  runApp(GlobeApp());
+  runApp(const GlobeApp());
 }
 
 class GlobeApp extends StatelessWidget {
@@ -12,16 +12,17 @@ class GlobeApp extends StatelessWidget {
     return MaterialApp(
       home: Scaffold(
         appBar: AppBar(
-          title: Text('PQA very 1st app'),
+          title: const Text('PQA very 1st app'),
         ),
         body: Container(
-            decoration: BoxDecoration(
+            decoration: const BoxDecoration(
               image: DecorationImage(
                 image: AssetImage('assets/yellow-night.jpg'),
                 fit: BoxFit.cover,
               ),
             ),
-            child: Center(child: Text('Commit to be fit, dhaskjdhdkfkdshfk'))),
+            child: const Center(
+                child: Text('Commit to be fit, dhaskjdhdkfkdshfk'))),
       ),
     );
   }
