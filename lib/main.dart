@@ -14,7 +14,14 @@ class GlobeApp extends StatelessWidget {
         appBar: AppBar(
           title: Text('PQA very 1st app'),
         ),
-        body: Center(child: Text('Commit to be fit, dhaskjdhdkfkdshfk')),
+        body: Container(
+            decoration: BoxDecoration(
+              image: DecorationImage(
+                image: AssetImage('assets/yellow-night.jpg'),
+                fit: BoxFit.cover,
+              ),
+            ),
+            child: Center(child: Text('Commit to be fit, dhaskjdhdkfkdshfk'))),
       ),
     );
   }
