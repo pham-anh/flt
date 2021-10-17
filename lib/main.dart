@@ -23,6 +23,7 @@ class GlobeApp extends StatelessWidget {
             ),
             child: Center(
                 child: Container(
+                    padding: EdgeInsets.all(24),
                     decoration: const BoxDecoration(
                       color: Colors.white70,
                     ),
