@@ -1,3 +1,4 @@
+import 'package:first_flutter_app/screens/intro.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -10,35 +11,6 @@ class GlobeApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      home: Scaffold(
-        appBar: AppBar(
-          title: const Text('PQA very 1st app'),
-        ),
-        body: Container(
-            decoration: const BoxDecoration(
-              image: DecorationImage(
-                image: AssetImage('assets/yellow-night.jpg'),
-                fit: BoxFit.cover,
-              ),
-            ),
-            child: Center(
-                child: Container(
-                    padding: EdgeInsets.all(24),
-                    decoration: const BoxDecoration(
-                      borderRadius: BorderRadius.all(Radius.circular(20)),
-                      color: Colors.white70,
-                    ),
-                    child: const Text(
-                      'Commit to be fit, \ndhaskjdhdkfkdshfk',
-                      textAlign: TextAlign.center,
-                      style: TextStyle(fontSize: 22, shadows: [
-                        Shadow(
-                            blurRadius: 2.0,
-                            offset: Offset(1.0, 1.0),
-                            color: Colors.grey),
-                      ]),
-                    )))),
-      ),
-    );
+        theme: ThemeData(primarySwatch: Colors.blueGrey), home: IntroScreen());
   }
 }
